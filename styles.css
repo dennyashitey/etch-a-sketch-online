@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    gap: 30px;
+}
+
+.container .drawing-area .drawing-board {
+    border: 3px solid black;
+    min-width: 420px;
+    min-height: 420px;
+    border-radius: 6px;
+    background-color: #DEE0E5;
+    padding: 10px;
+}
+
+.container .drawing-area .drawing-board .drawing-space {
+    min-width: 420px;
+    min-height: 420px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.container .share-btn-container {
+    padding-block: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .share-btn-container .share-btn {
+    padding: 6px 50px;
+    border-radius: 6px;
+    border: none;
+    background-color: #1878F5;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.container .configurations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.container .configurations .container-btn {
+    background-color: #DEE0E5;
+    border: 3px solid black;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.container .configurations .buttons {
+    border-radius: 6px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+}
+
+.set-size-container {
+    border: 3px solid black;
+    border-radius: 6px;
+    padding: 8px;
+    background-color: #DEE0E5;
+}
+
+.set-size-container .set-size-inner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.set-size-inner-container input {
+    max-width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.set-size-btn {
+    background-color: #1878F5;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 3px 12px;
+    border-radius: 4px;
+    border: none;
+}
