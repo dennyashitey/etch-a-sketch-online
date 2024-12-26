@@ -30,10 +30,24 @@ body {
 }
 
 .container .drawing-area .drawing-board .drawing-space {
-    min-width: 420px;
-    min-height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px;
+    height: 420px;
     background-color: white;
     border-radius: 6px;
+}
+
+.gridbox {
+    background-color: #fff;
+    border: 1px solid #bbb; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridbox:hover {
+    background-color: #ddd;
 }
 
 .container .share-btn-container {
