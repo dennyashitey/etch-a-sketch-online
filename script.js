@@ -2,9 +2,16 @@ const BRUSH = document.querySelector('.brush')
 const BUCKET = document.querySelector('.bucket')
 const ERASER = document.querySelector('.eraser')
 const SIZEBTN = document.querySelector('.set-size-btn')
-const TOGGLEGRIDBTN = document.querySelector('.grid-btn-container')
+const TOGGLEGRIDBTN = document.querySelector('.grid-btn')
+const HELPBTN = document.querySelector('.help-btn');
+const HELPCONTAINER = document.querySelector('.help-container')
 let gridSize = document.querySelector('.grid-size')
 let drawingSpace = document.querySelector('.drawing-space')
+
+
+HELPBTN.addEventListener('click', () => {
+    HELPCONTAINER.classList.toggle('help-container-visibility');
+});
 
 SIZEBTN.addEventListener('click', () => {
     let gridboxes = gridSize.value;
