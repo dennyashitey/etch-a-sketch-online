@@ -28,6 +28,12 @@ SIZEBTN.addEventListener('click', () => {
                 grids.style.backgroundColor = 'white';
             })
         })
+        ERASER.addEventListener('dblclick', ()=> {
+            const allGrids = document.querySelectorAll('.gridbox');
+            allGrids.forEach(grid => {
+                grid.style.backgroundColor = 'white'
+            });
+        })
         BRUSH.addEventListener('click', ()=> {
             grids.addEventListener('mouseover', ()=> {
                 grids.style.backgroundColor = `${colorPicker.value}`;
