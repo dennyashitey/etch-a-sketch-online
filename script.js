@@ -5,6 +5,8 @@ const SIZEBTN = document.querySelector('.set-size-btn')
 const TOGGLEGRIDBTN = document.querySelector('.grid-btn')
 const HELPBTN = document.querySelector('.help-btn');
 const HELPCONTAINER = document.querySelector('.help-container')
+const WARNINGWINDOW = document.querySelector('.warning-window')
+const CLOSEBTN = document.querySelector('.close-btn')
 let colorPicker = document.querySelector('.color-picker')
 let gridSize = document.querySelector('.grid-size')
 let drawingSpace = document.querySelector('.drawing-space');
@@ -53,7 +55,10 @@ SIZEBTN.addEventListener('click', () => {
         })
     } 
     } else {
-        alert('Grid size should be a multiple of 4')
+        WARNINGWINDOW.classList.add('warning-window-visibility')
+        CLOSEBTN.addEventListener('click', ()=> {
+            WARNINGWINDOW.classList.remove('warning-window-visibility')
+        })
     }
     
 })
